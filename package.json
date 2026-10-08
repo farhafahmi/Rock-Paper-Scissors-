@@ -1,0 +1,32 @@
+{
+  "name": "vision-rps",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare:assets": "node scripts/prepare-assets.mjs",
+    "predev": "npm run prepare:assets",
+    "prebuild": "npm run prepare:assets"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "1.1.0",
+    "motion": "13.4.5",
+    "next": "15.5.27",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.15.30",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.8.3"
+  },
+  "engines": {
+    "node": ">=20.9.0 <26"
+  }
+}
